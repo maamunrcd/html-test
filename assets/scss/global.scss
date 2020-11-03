@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    opacity: 1;
+
+    &:hover {
+        color: initial;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 990px;
+    }
+}
+
+//Global Section Header
+.section-header {
+    h1 {
+        font-size: $heading;
+        font-family: $oswald;
+        color: $primary-color;
+        @media (max-width: 991px) {
+            font-size: 1.5rem;
+        }
+        @media (max-width: 767px) {
+            font-size: 1.3rem;
+        }
+        .serial-no {
+            font-size: $count;
+            color: lighten($primary-color, 15%);
+            margin: 0;
+            line-height: 1;
+            letter-spacing: .4px;
+            @media (max-width: 991px) {
+                font-size: 6rem;
+            }
+            @media (max-width: 767px) {
+                font-size: 4rem;
+            }
+        }
+
+        .heading {
+            position: relative;
+            top: -25px;
+            left: -24px;
+            @media (max-width: 991px) {
+                top: -20px;
+                left: -18px;
+            }
+            @media (max-width: 767px) {
+                top: -12px;
+                left: -13px;
+            }
+            
+        }
+    }
+}
+
+.section-body {
+    padding-left: 7%;
+}
+
+.paragraph {
+    font-size: $defult;
+    font-family: $loto;
+    font-weight: 300;
+    color: darken($primary-color, 100%);
+}

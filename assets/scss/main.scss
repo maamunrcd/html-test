@@ -1,0 +1,361 @@
+@import 'variable.scss';
+@import 'global.scss';
+
+body {
+    .carousel-item {
+        margin-right: 0px;
+    }
+}
+
+//Header Start Here
+header {
+    .hero-section {
+        float: initial;
+    }
+
+    .navbar {
+        padding: 0;
+        @media (max-width: 991px) {
+            flex-wrap: initial;
+            padding: 0 15px;
+            .navbar-collapse {
+                display: flex;
+            }
+        }
+
+    }
+
+    .header-nav {
+        top: 0;
+        bottom: initial;
+        padding-top: 0;
+
+        &.carousel-caption {
+           max-width: 915px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            @media (max-width: 991px) {
+                max-width: 700px;
+            }
+            @media (max-width: 767px) {
+                max-width: 510px;
+            }
+        }
+
+        .navbar-nav {
+            @media (max-width: 991px) {
+                flex-direction: row;
+            }
+            .nav-link {
+                font-size: $nav-menu;
+                font-family: $loto;
+                font-weight: 700;
+                font-style: italic;
+                border-bottom: 1px solid lighten($primary-color, 100%);
+                padding: 0px 3px;
+                line-height: 1;
+                margin: 0 10px;
+                color: lighten($primary-color, 100%);
+                &:hover {
+                    color: $primary-color;
+                    border-bottom: 1px solid $primary-color;
+                }
+            }
+        }
+    }
+}
+//Header End Here
+
+.sticky-menu {
+    padding: .5rem 0;
+    background: lighten($primary-color, 100%);
+    .navbar {
+        padding: 0;
+        @media (max-width: 991px) {
+            flex-wrap: initial;
+            padding: 0 15px;
+            .navbar-collapse {
+                display: flex;
+            }
+        }
+
+    }
+    .navbar-nav {
+        @media (max-width: 991px) {
+            flex-direction: row;
+        }
+        .nav-link {
+            color: $primary-color;
+            font-size: $nav-menu;
+            font-family: $loto;
+            font-weight: 700;
+            font-style: italic;
+            border-bottom: 1px solid $primary-color;
+            padding: 0px 3px;
+            line-height: 1;
+            margin: 0 10px;
+        }
+    }
+}
+
+.history {
+    .carousel-item {
+        .img-fluid {
+            @media (max-width: 767px) {
+                max-width: 110%;
+                margin-left: -10%;
+            }
+            @media (max-width: 650px) {
+                max-width: 130%;
+                margin-left: -30%;
+            }
+            @media (max-width: 590px) {
+                max-width: 160%;
+                margin-left: -60%;
+            }
+            @media (max-width: 479px) {
+                max-width: 220%;
+                margin-left: -120%;
+            }
+            @media (max-width: 460px) {
+                max-width: 250%;
+                margin-left: -150%;
+            }
+            @media (max-width: 390px) {
+                max-width: 295%;
+                margin-left: -195%;
+            }
+            @media (max-width: 320px) {
+                max-width: 315%;
+                margin-left: -215%;
+            }
+        }
+    }
+    .carousel-caption {
+       max-width: 915px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0;
+        text-align: left;
+        bottom: initial;
+        @media (max-width: 991px) {
+            max-width: 700px;
+        }
+        @media (max-width: 767px) {
+            max-width: 510px;
+            padding: 0 15px;
+            top: 20px;
+        }
+    }
+}
+
+//Carousel Section Start Here
+.carousel-section {
+    background: rgba($primary-color, .75);
+    padding: 25px 0 15px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    .slick-slide {
+        margin: 0 5px;
+    }
+
+    .slick-dots {
+        display: block;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+
+        li {
+            display: inline-block;
+            margin: 0;
+            line-height: 1;
+            padding: 0;
+            margin: 0 3px;
+
+            button {
+                text-indent: -2222px;
+                width: 10px;
+                height: 10px;
+                border: none;
+                border-radius: 5px;
+                background: lighten($primary-color, 15%);
+            }
+
+            &.slick-active {
+                button {
+                    background: lighten($primary-color, 100%);
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
+//Carousel Section Start Here
+
+.climb {
+    .section-header h1 .serial-no {
+        color: rgba($primary-color, .5);
+        line-height: initial;
+        @media (max-width: 550px) {
+            margin: 0;
+        }
+    }
+    .section-header {
+        @media (max-width: 550px) {
+            flex-direction: column;
+            align-items: start !important;
+            margin-bottom: 20px;
+        }
+        .paratraph {
+            @media (max-width: 550px) {
+                padding-left: 7%;
+                margin-top: -15px;
+            }
+        }
+    }
+    
+    .climb-tab-view {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        .tab-item {
+            background: $primary-color;
+            .nav.nav-tabs {
+                .nav-link {
+                    font-size: 1.25rem;
+                    padding: 5px 25px;
+                    border-radius: 0;
+                    border:none;
+                    font-family: $oswald;
+                    transition: all .5s;
+                    &:hover {
+                        color: lighten($primary-color, 100%);
+                    }
+                    &.active {
+                        background: $gray-color;
+                        color: $primary-color;
+                        text-decoration: underline;
+                    }
+                    &:hover {
+                        border:none;
+                    }
+                }
+            }
+        }
+        .tab-content {
+            margin-top: -1px;
+        }
+        .carousel-item {
+            .img-fluid {
+                @media (max-width: 767px) {
+                    max-width: 110%;
+                    margin-left: -10%;
+                }
+                @media (max-width: 650px) {
+                    max-width: 130%;
+                    margin-left: -30%;
+                }
+                @media (max-width: 590px) {
+                    max-width: 160%;
+                    margin-left: -60%;
+                }
+                @media (max-width: 520px) {
+                    max-width: 220%;
+                    margin-left: -120%;
+                }
+                @media (max-width: 460px) {
+                    max-width: 250%;
+                    margin-left: -150%;
+                }
+                @media (max-width: 390px) {
+                    max-width: 295%;
+                    margin-left: -195%;
+                }
+                @media (max-width: 320px) {
+                    max-width: 315%;
+                    margin-left: -215%;
+                }
+            }
+        }
+    }
+}
+
+//Schedule Section Start
+.schedule {
+    top: 15%;
+    bottom: initial;
+    text-align: left;
+    @media (max-width: 991px) {
+        top: 0;
+    }
+    @media (max-width: 590px) {
+        left: 15px;
+        right: 15px;
+    }
+
+    .schedule-wrapper {
+        background: lighten($primary-color, 100%);
+        display: inline-block;
+        margin-left: 10%;
+        padding: 20px 0;
+        @media (max-width: 590px) {
+            margin: 0;
+            width: 100%;
+        }
+        .schedule-header {
+            padding: 0 20px;
+            h1 {
+                font-size: $heading;
+                font-family: $oswald;
+                color: $primary-color;
+            }
+        }
+        .schedule-body {
+            p {
+               font-family: $loto;
+               font-size: $defult;
+               font-weight: 300;
+               color: darken($primary-color, 100%);
+               margin: 0;
+               &.long-distance {
+                   margin-top: 20px;
+               }
+               .schedule-date, .schedule-name {
+                   padding: 0 25px;
+                   display: inline-block;
+               }
+            }
+        }
+    }
+}
+//Schedule Section End
+
+//Footer Section Start
+footer {
+    padding: 7px 0;
+    background: lighten($primary-color, 5%);
+    .footer-wrapper {
+        @media (max-width: 440px) {
+            flex-direction: column;
+        }
+    }
+    .copyright {
+        margin: 0;
+        color:  lighten($primary-color, 20%);
+        font-size: $nav-menu;
+        font-family: $loto;
+        font-weight: 700;
+        font-style: italic;
+        @media (max-width: 440px) {
+            margin-top: 10px;
+        }
+    }
+}

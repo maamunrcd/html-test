@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  color: inherit;
+  opacity: 1; }
+  a:hover {
+    color: initial; }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 990px; } }
